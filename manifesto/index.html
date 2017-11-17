@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fail.2.succeed</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+        body__ {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 30px; /* HERE */
+        }
+
+        .text {
+            position: absolute;
+            width__: 480px;
+            left: 50%;
+            margin-left: -500px; /* HERE */
+            height: 40px;
+            top: 40%;
+            margin-top: -20px;
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+        }
+
+        p {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+			color: #444444; /* HERE */
+        }
+
+		/* HERE */
+		/** http://www.perbang.dk/rgbgradient/ **/
+        .w_fail    { color: #ff0000; }
+        .w_try     { color: #F40CC6; }
+        .w_explore { color: #1c1ce5; }
+        .w_learn   { color: #00aca5; } /* 2ad6b3 */
+        .w_succeed { color: #33cc33; }
+
+        .word {
+            position: absolute;
+            width: 700px; /* HERE */
+            opacity: 0;
+        }
+
+        .letter {
+            display: inline-block;
+            position: relative;
+            float: left;
+            transform: translateZ(25px);
+            transform-origin: 50% 50% 25px;
+        }
+
+        .letter.out {
+            transform: rotateX(90deg);
+            transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+
+        .letter.outSame {
+            transform: rotateX(90deg);
+
+        }
+
+        .letter.behind {
+            transform: rotateX(-90deg);
+        }
+
+        .letter.in {
+            transform: rotateX(0deg);
+            transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .letter.inSame {
+            transform: rotateX(0deg);
+        }
+
+        .wisteria {
+            color: #8e44ad;
+        }
+
+        .belize {
+            color: #2980b9;
+        }
+
+        .pomegranate {
+            color: #c0392b;
+        }
+
+        .green {
+            color: #16a085;
+        }
+
+        .midnight {
+            color: purple;
+        }
+
+        .bound_ {  /* HERE */
+            color: #444444;
+        }
+
+        body {
+            background-color: #EEEEEE;
+            color: white;
+        }
+
+        .logo {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 900%;
+        }
+
+        .outer {
+            display: table;
+            position: absolute;
+            height: 95%;
+            width: 95%;
+        }
+
+        .middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .inner {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100% /*whatever width you want*/;
+            text-align: center;
+        }
+
+		.topcorner{
+			position:absolute;
+			top:10px;
+			right:10px;
+		}
+
+		.circleBase {
+			border-radius: 50%;
+			behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+			width: 30px;
+			height: 30px;
+			color: white;
+			background: #CCCCCC;
+			border: 0px solid red;
+			text-align: center;
+		}		
+
+		.circleBase:hover {
+			color_: #CCCCCC;
+			background: #00aca5;
+		}		
+		
+		.topcorner a {
+			text-decoration: none;
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+			line-height: 30px;
+		}
+		
+	</style>
+</head>
+<body>
+
+
+<div class="outer">
+    <div class="middle">
+        <div class="inner logo">
+
+            <!-- p class="logo"><span style="color: #444444">(</span>(]o[)<span style="color: #444444">)</span></p -->
+
+            <div class="text">
+                <p>Manifesto<br>|Soon!</p>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="topcorner">
+	<a href="http://inagua.ch" target="_blank">
+		<div class="circleBase">i</div>
+	</a>
+</div>
+
+</body>
+</html>

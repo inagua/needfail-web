@@ -5,6 +5,10 @@
     <style>
         @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
+        body {
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+        };
+
         body__ {
             font-family: 'Open Sans', sans-serif;
             font-weight: 600;
@@ -20,6 +24,26 @@
             top: 40%;
             margin-top: -20px;
             font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+            color: #444444; /* HERE */
+        }
+
+        .primary {
+            color: #ff8c00; /* HERE */
+        }
+        .manifesto {
+            color: #000000; /* HERE */
+            font-size: 200%;
+            font-weight: bold;
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+        }
+        .typo-fail {
+            color: #444444; /* HERE */
+            font-weight: normal;
+        }
+        .typo-acronym {
+            font-size: 200%;
+            font-weight: bold;
+            color_: #ff8c00; /* HERE */
         }
 
         p {
@@ -132,6 +156,10 @@
 			top:10px;
 			right:10px;
 		}
+        .topcorner.left{
+            left:10px;
+            right:none;
+        }
 
 		.circleBase {
 			border-radius: 50%;
@@ -144,6 +172,9 @@
 			border: 0px solid red;
 			text-align: center;
 		}		
+		.left .circleBase {
+			color: black;
+		}
 
 		.circleBase:hover {
 			color_: #CCCCCC;
@@ -155,31 +186,61 @@
             font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 			line-height: 30px;
 		}
-		
+
+        .footer {
+            position:absolute;
+            width:600px;
+            height_:300px;
+            background_:#063;
+            bottom:0px;
+            right:25%;
+            left:50%;
+            margin-left:-300px;
+            color: #444444; /* HERE */
+        }
+        .footer a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #00aca5; /* HERE */
+        }
+
 	</style>
 </head>
 <body>
 
 
-<div class="outer">
-    <div class="middle">
-        <div class="inner logo">
+<div class="topcorner left">
+    <a href="../index.html">
+        <div class="circleBase"><</div>
+    </a>
+</div>
+<div class="topcorner">
+    <a href="http://inagua.ch" target="_blank">
+        <div class="circleBase">i</div>
+    </a>
+</div>
 
-            <!-- p class="logo"><span style="color: #444444">(</span>(]o[)<span style="color: #444444">)</span></p -->
+<div class="outer_">
 
-            <div class="text">
-                <p>Manifesto<br>|Soon!</p>
-            </div>
-
-
+    <div class="manifesto" style="width: 100%; text-align: center;;">
+        <h1 style="text-align: center"><span>http://need.fail/</span><span class="primary">manifesto</span></h1>
+        <div style="display: inline-block;">
+            <ul>
+                <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">S</span>mall</li>
+                <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">H</span>eterogenous</li><!-- Different -->
+                <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">A</span>ward</li>
+                <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">M</span>ercilessly</li>
+                <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">P</span>ositive</li>
+                <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">O</span>ften</li>
+                <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">O</span>nce</li>
+                <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">S</span>oon</li> <!-- Fast -->
+            </ul>
         </div>
     </div>
 </div>
-<div class="topcorner">
-	<a href="http://inagua.ch" target="_blank">
-		<div class="circleBase">i</div>
-	</a>
-</div>
 
+<div class="footer">
+    http://need.fail @ 2017 &bull; v1.0 &bull; <a href="https://twitter.com/gonnot" target="_blank">@gonnot</a> &bull; <a href="https://twitter.com/jacquescouvreur" target="_blank">@jacquescouvreur</a>
+</div>
 </body>
 </html>

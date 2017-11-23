@@ -32,9 +32,14 @@
         }
         .manifesto {
             color: #000000; /* HERE */
-            font-size: 200%;
+            font-size: 190%;
             font-weight: bold;
             font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
         }
         .typo-fail {
             color: #444444; /* HERE */
@@ -189,10 +194,10 @@
 
         .footer {
             position:absolute;
-            width:600px;
+            width_:600px;
             height_:300px;
             background_:#063;
-            bottom:0px;
+            bottom_:0px;
             right:25%;
             left:50%;
             margin-left:-300px;
@@ -204,6 +209,79 @@
             color: #00aca5; /* HERE */
         }
 
+
+        a.button {
+            text-decoration: none;
+        }
+
+        .button {
+            align-items: flex-start;
+            background-color: #ff8c00;
+            background-image: none;
+            border-bottom-color:#ff8c00;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-image-outset: 0px;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-left-color: #ff8c00;
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-color: #ff8c00;
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-color: #ff8c00;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: inline-block;
+            font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-stretch: normal;
+            font-style: normal;
+            font-variant-caps: normal;
+            font-variant-ligatures: normal;
+            font-variant-numeric: normal;
+            font-weight: normal;
+            height: 46px;
+            letter-spacing: normal;
+            line-height: 24px;
+            margin-bottom: 5px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            min-width: 120px;
+            overflow-x: visible;
+            overflow-y: visible;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            text-align: center;
+            text-indent: 0px;
+            text-rendering: auto;
+            text-shadow: none;
+            text-size-adjust: 100%;
+            text-transform: none;
+            touch-action: manipulation;
+            user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            word-spacing: 0px;
+            writing-mode: horizontal-tb;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-border-image: none;
+
+        }
 	</style>
 </head>
 <body>
@@ -221,9 +299,8 @@
 </div>
 
 <div class="outer_">
-
-    <div class="manifesto" style="width: 100%; text-align: center;;">
-        <h1 style="text-align: center"><span>need.fail/</span><span class="primary">manifesto</span></h1>
+    <div class="manifesto" style="width: 100%; text-align: center;">
+        <h1 style="text-align: center; margin-bottom: 0px;"><span>need.fail/</span><span class="primary">manifesto</span></h1>
         <div style="display: inline-block;">
             <ul>
                 <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">S</span>mall</li>
@@ -236,6 +313,10 @@
                 <li style="text-align: left"><span class="typo-fail">Fail</span> <span class="typo-acronym primary">S</span>oon</li> <!-- Fast -->
             </ul>
         </div>
+        <br/>
+        <a class="button" href="https://jacquescouvreur.typeform.com/to/tSao6g">Sign the Manifesto</a>
+        <br/>
+        <br/>
     </div>
 </div>
 
